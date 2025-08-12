@@ -2,19 +2,19 @@ const products = [
   {
     name: "Hollow Blocks",
     category: "Structural",
-    image: "/assets/images/Hollow-blocks.webp",
+    image: "./assets/images/Hollow-blocks.webp",
     description: "Durable hollow blocks for cost-effective and strong wall construction."
   },
   {
     name: "Paving Slabs",
     category: "Landscaping",
-    image: "/assets/images/interlocking-cabro-blocks.webp",
+    image: "./assets/images/interlocking-cabro-blocks.webp",
     description: "Beautiful paving slabs for driveways, walkways, and gardens."
   },
   {
     name: "Double T Cabro Pavers",
     category: "Landscaping",
-    image: "/assets/images/Double-T-Cabro-Pavers.webp",
+    image: "./assets/images/Double-T-Cabro-Pavers.webp",
     description: "Interlocking pavers suitable for heavy industrial traffic areas, footpaths, streetscapes, and road infrastucture."
   }
 ];
