@@ -1,0 +1,138 @@
+/*:root {
+    primary-color: ;
+    secondary-color: ;
+    primary-background-color: ;
+}*/
+body {
+    text-align: center;
+    width: 100vw;
+    background-color: #FFFAF0;
+}
+.nav-bar {
+    display:flex;
+    position: relative;
+    align-items: end;
+}
+.nav-bar nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav ul{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 20px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: navy;
+}
+a:hover {
+    text-decoration: underline;
+    color: #DAA520;
+}
+#hero-section {
+    background: linear-gradient(135deg, hsl(220 85% 50%), hsl(220 85% 35%));
+    padding: 10px;
+    color:#FFFAF0;
+}
+#hero-section h1 {
+    font-weight: bold;
+    color: #DAA520;
+}
+.big {
+    font-size:xx-large;
+    color: #FFFAF0;
+}
+.big>span {
+    color: #DAA520;
+}
+h2 {
+    color: #DAA520;
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.slider img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.slider-btn {
+  background-color: #DAA520;
+  color: navy;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-btn.left {
+  position: absolute;
+  left: 0;
+}
+
+.slider-btn.right {
+  position: absolute;
+  right: 0;
+}
+#contact {
+    background: linear-gradient(135deg, hsl(220 85% 50%), hsl(220 85% 35%));
+    color:#FFFAF0;
+    padding: 30px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.map {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    background: #FFFAF0;
+    flex: 7;
+    max-width: 70%;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contact-content > p {
+    flex: 3;
+    padding: 30px;
+    max-width: 30%;
+}
+.contacts > a {
+    color:#DAA520;
+    text-decoration: none;
+}
+
+
