@@ -172,5 +172,10 @@ h2 {
     color:#DAA520;
     text-decoration: none;
 }
+@media (max-width: 480px) {
+    #contact {
+        flex-direction: column;
+    }
+}
 
 
