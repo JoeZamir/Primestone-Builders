@@ -8,71 +8,173 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- Inter (core font) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- IBM Plex Sans (accent / headings if needed) -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
     <title>Primestone Builders Ltd Landing Page</title>
-    <script src="index.js" defer></script>
+
   </head>
   <body>
-    <header id="header" class="nav-bar">
-      <img
-        src="assets/images/PBL logo.png"
-        alt="logo"
-        id="logo"
-        width="100"
-        height="100"
-      />
-      <nav class="nav">
-        <ul>
-          <li><a class="about-us" href="#about-us">About</a></li>
-          <li>
-            <a class="core-products" href="#core-products">Products</a>
-          </li>
-          <li><a class="contact" href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+        <header class="nav-header">
+          <div class="brand">
+            <img
+              src="/assets/logos/logo.jpg"
+              alt="Primestone Builders Logo"
+              width="40"
+              height="40"
+            >
+            <div class="brand-title">PRIMESTONE <span style="display: block;" class="highlight smaller">BUILDERS LTD</span></div>
+          </div>
+
+          <button type="button" class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+
+          <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Main Content -->
     <main id="main">
+
+      <!-- Hero Section -->
       <section id="hero-section">
-        <h1>PRIMESTONE BUILDERS LTD</h1>
-        <div class="big">
-          Built to Last,
-          <span style="display: block"> Designed for Strength </span>
+        <h1>PRIMESTONE <span style="display: block;" class="highlight smaller">BUILDERS LTD</span></h1>
+        <p>Building It Better in Concrete</p>
+        <h2 class="subtitle">
+          WITH YOU IN EVERY
+          <span style="display: block" class="highlight smaller">PROJECT</span>
+        </h2>
+        <div class="check">
+          <p><i class="fa-solid fa-check"></i> Quality Materials</p>
+          <p><i class="fa-solid fa-check"></i> Expert Construction</p>
+          <p><i class="fa-solid fa-check"></i> Reliable Service</p>
         </div>
-        <p>
-          Premium concrete materials and precast solutions for durable
-          construction projects that stand the test of time
-        </p>
+        <div class="hero-buttons">
+          <button type="button" class="explore">Explore Products</button>
+          <button type="button" class="contact-hero">Contact Us</button>
+        </div>
       </section>
+
+
+      <!-- Products Section -->
+      <section id="products">
+        <h2>Our Products</h2>
+        <p>
+          Comprehensive range of high-quality concrete products designed to meet all your construction requirements
+        </p>
+        <div class="product-categories">
+          <div class="category">
+            <div class="icon"></div>
+            <h3>Paving Blocks</h3>
+            <p>Durable and aesthetic paving blocks for driveways, patios, and walkways</p>
+            <div class="category-items">
+              <div class="item">Cabro Paving Blocks</div>
+              <div class="item">Trihrex Paver</div>
+              <div class="item">Double T Rond</div>
+              <div class="item">Aristo Paver</div>
+              <div class="item">Uni-Paver Cabro Blocks</div>
+            </div>
+          </div>
+          <div class="category">
+            <div class="icon"></div>
+            <h3>Concrete Blocks</h3>
+            <p>High-strength concrete blocks for structural and architectural applications</p>
+            <div class="category-items">
+              <div class="item">Hollow Concrete Blocks</div>
+              <div class="item">Hollow Pots</div>
+              <div class="item">Road Channels</div>
+              <div class="item">Interlocking Concrete Blocks</div>
+              <div class="item">Road Kerbs</div>
+              <div class="item">Slabs</div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-card">
+          <h3>Quality Assurance</h3>
+          <p>All our products are manufactured using premium quality materials and state-of-the-art technology, ensuring durability, strength, and consistent performance for your construction projects.</p>
+        </div>
+      </section>
+
+      <!-- Products Gallery Section -->
+      <section class="products-gallery">
+        <div class="heading">
+          <i class="fa-solid fa-building"></i>
+          <h2>Product Showcase</h2>
+        </div>
+        <p>Explore our range of high-quality concrete products designed for durability and aesthetics.</p>
+        <div class="gallery-container"></div>
+        <p>Swipe left or right to explore more products</p>
+      </section>
+
+      <!-- About Us Section -->
       <section id="about-us">
         <h2>About Us</h2>
         <p>
-          We are a building and construction company specialized in providing
-          quality building materials to the Nairobi metropolitan area and
-          countrywide.
+          Primestone Builders LTD is a leading manufacturer and supplier
+          of high-quality concrete products in Kenya. With years of experience
+          in the construction industry, we have established ourselves as a trusted
+          partner for contractors, developers, and individual builders across the region.
         </p>
         <p>
-          Our years in the manufacturing industry and wide range of designs will
-          give your projects a fresh and unique look.
+          Our commitment to excellence, combined with state-of-the-art manufacturing facilities
+          and a dedicated team of professionals, ensures that we deliver products that meet the
+          highest standards of quality, durability, and performance. We take pride in being with you
+          in every project, providing reliable solutions that build lasting foundations.
         </p>
-      </section>
-      <section id="core-products">
-        <h2>What we deal in</h2>
-        <p>We are verified dealers in:</p>
-        <div class="slider-container">
-          <button class="slider-btn left">&lt;</button>
-          <div class="slider" id="productSlider"></div>
-          <button class="slider-btn right">&gt;</button>
+        <div class="quality">
+          <div class="quality-card">
+            <div class="icon"></div>
+            <h3>Quality Excellence</h3>
+            <p>Premium materials and rigorous quality control ensure superior products.</p>
+          </div>
+          <div class="quality-card">
+            <div class="icon"></div>
+            <h3>Expert Team</h3>
+            <p>Our experienced professionals ensure top-notch service and support.</p>
+          </div>
+          <div class="quality-card">
+            <div class="icon"></div>
+            <h3>Reliable Delivery</h3>
+            <p>Timely delivery services to keep your projects on schedule.</p>
+          </div>
+          <div class="quality-card">
+            <div class="icon"></div>
+            <h3>Quick Turnaround</h3>
+            <p>Fast production and delivery to meet your project deadlines.</p>
+          </div>
+        </div>
+        <div class="mission">
+          <h3>Our Mission</h3>
+          <p>
+            To provide innovative, high-quality concrete products that exceed our
+            customers' expectations while contributing to the development of sustainable
+            infrastructure across Kenya and beyond.
+          </p>
         </div>
       </section>
+
+      <!-- Contact Section -->
       <section id="contact">
-        <h2>Location & Contact</h2>
+        <h2>Find Us and Connect</h2>
+        <p>
+          Ready to start your construction project? Get in touch with us today for inquiries and orders
+          or pay us a visit, and get to view samples. We look forward to partnering with you!
+        </p>
         <div class="contact-content">
           <div class="contacts">
-              <p>
-            We are located in behind Spur Mall, in Ruiru Kimbo, Nairobi. Pay us
-            a visit, tell us your requirements, and get to view samples.
-            Alternatively, you can reach us directly through telephone,
-            whatsapp, or our socials to make your orders.
-              </p>
               <a href="https://www.facebook.com/p/Primestone-Builders-Limited-100091267555223/" id="facebook-profile-link" target="_blank" rel="noopener"
                 ><i class="fab fa-facebook-f"></i> Primestone Builders Limited</a
               >
@@ -103,5 +205,6 @@
       <section id="cta"></section>
     </main>
     <footer></footer>
+    <script src="index.js" defer></script>
   </body>
 </html>
